@@ -23,7 +23,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload from Github Actions with React2.
-	    {data.body}
+	    {
+		           data && data.map((body)=><p>{body}</p>)
+	    }
 	</p>
         <a
           className="App-link"
