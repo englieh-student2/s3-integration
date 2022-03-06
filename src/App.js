@@ -14,6 +14,7 @@ function App() {
 	.then((response) => console.log(response.json()))
         .then((actualData) => {
 	        setData(actualData);
+		console.log(actualData);
 	      })
     }, []);
 	 //
