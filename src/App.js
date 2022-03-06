@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-//import { useState, useEffect } from "react";
+
+import { useEffect } from "react";
 
 function App() {
   //const [error, setError] = useState(null);
@@ -26,13 +27,18 @@ function App() {
         //  setError(error);
         //}
   //    )
-  //}, [])
+  //}, [
+    useEffect(() => {
+	fetch(`https://b05slmqz8d.execute-api.us-east-1.amazonaws.com/test/`)
+	.then((response) => console.log(response));
+    }, []);
+	 //
     return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload from Github Actions.
+          Edit <code>src/App.js</code> and save to reload from Github Actions with React.
         </p>
         <a
           className="App-link"
@@ -44,7 +50,7 @@ function App() {
         </a>
     </header>
    </div>
-  );
+    );
 }
 
 export default App;
