@@ -48,14 +48,14 @@ function App() {
         >
           Learn React
         </a>
-       <ul>
+      <!-- <ul>
         {items &&
           items.map(({ statusCode, body }) => (
             <li key={statusCode}>
               <h3>{body}</h3>
             </li>
           ))}
-      </ul>
+      </ul>-->
     </header>
    </div>
   );
