@@ -27,7 +27,7 @@ jobs:
     - name: Unit Tests
       run: |
         yarn test
-    - name: Deploy to S3
+    - name: Deploy to S3 using
       uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --delete
