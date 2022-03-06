@@ -28,7 +28,7 @@ function App() {
       )
   }, [])
 
-if (error) {
+ if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div>Loading...</div>;
@@ -48,8 +48,7 @@ if (error) {
         >
           Learn React
         </a>
-      </header>
-      <ul>
+       <ul>
         {items &&
           items.map(({ statusCode, body }) => (
             <li key={statusCode}>
@@ -57,7 +56,8 @@ if (error) {
             </li>
           ))}
       </ul>
-    </div>
+    </header>
+   </div>
   );
  }
 }
