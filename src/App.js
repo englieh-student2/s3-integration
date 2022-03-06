@@ -30,7 +30,7 @@ function App() {
   //}, [
     useEffect(() => {
 	fetch(`https://b05slmqz8d.execute-api.us-east-1.amazonaws.com/test/`)
-	.then((response) => console.log(response));
+	.then((response) => console.log(response.json()));
     }, []);
 	 //
     return (
@@ -38,7 +38,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload from Github Actions with React.
+          Edit <code>src/App.js</code> and save to reload from Github Actions with React2.
         </p>
         <a
           className="App-link"
