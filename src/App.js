@@ -28,7 +28,12 @@ function App() {
       )
   }, [])
 
-  return (
+if (error) {
+    return <div>Error: {error.message}</div>;
+  } else if (!isLoaded) {
+    return <div>Loading...</div>;
+  } else {
+    return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -54,6 +59,7 @@ function App() {
       </ul>
     </div>
   );
+ }
 }
 
 export default App;
