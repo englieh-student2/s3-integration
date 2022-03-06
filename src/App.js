@@ -24,7 +24,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload from Github Actions with React2.
 	    {
-		           data.body
+		           data
 	    }
 	</p>
         <a
