@@ -4,9 +4,6 @@ import './App.css';
 import { useEffect, useState } from "react";
 
 function App() {
-  //const [error, setError] = useState(null);
-  //const [isLoaded, setIsLoaded] = useState(false);
-  // const [items, setItems] = useState([]);
   const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -20,16 +17,15 @@ function App() {
 		console.log(actualData.body);
 	      })
     }, []);
-	 //
+	 
     return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload from Github Actions with React2.
-	    {
-		           data
-	    }
+	</p>
+	<p> {data}
 	</p>
         <a
           className="App-link"
