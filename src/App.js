@@ -12,11 +12,11 @@ function App() {
     useEffect(() => {
 	fetch(`https://b05slmqz8d.execute-api.us-east-1.amazonaws.com/test/`)
 	.then((response) => {
-		//console.log(response.json());
-	    	return response.json();
+	    	return response.json()
 	})
         .then((actualData) => {
-	        setData(actualData);
+		console.log("Writing....");
+	        setData(actualData.body);
 		console.log(actualData.body);
 	      })
     }, []);
